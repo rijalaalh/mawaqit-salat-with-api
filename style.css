@@ -1,0 +1,91 @@
+/** @format */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(45deg, #240165, #05001c);
+  direction: rtl;
+}
+#city-name {
+  color: white;
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+#date-of-this-day {
+  color: white;
+  font-size: 1.5rem;
+  margin: 30px;
+  font-family: 'Poppins', sans-serif;
+  color: rgba(255, 255, 255, 0.749);
+}
+hr {
+  border: 0.5px solid rgba(43, 0, 255, 0.2);
+  margin: 0 30px;
+}
+.container .time-salat {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 200px;
+  flex-wrap: wrap;
+}
+@media (max-width: 786px) {
+  .container .time-salat {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+  }
+}
+.container .time-salat .card {
+  height: 95%;
+  background-color: white;
+  width: 12%;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 30%);
+}
+@media (max-width: 786px) {
+  .container .time-salat .card {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+.card .title {
+  background: linear-gradient(45deg, rgb(6, 0, 181), rgb(162, 0, 255));
+  h1 {
+    font-weight: 400;
+    color: white;
+    padding: 5px;
+  }
+}
+.card .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75%;
+  h1 {
+    font-size: 70px;
+  }
+}
+.change {
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+select {
+  padding: 7px;
+  font-size: 30px;
+  border-radius: 6px;
+  margin-left: 20px;
+  background-color: transparent;
+  color: #808080;
+}
+.change .city {
+}
